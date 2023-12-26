@@ -24,7 +24,7 @@ export class InputService {
         rawValue = isNumber ? new Number(rawValue).toFixed(precision) : rawValue;
         let onlyNumbers = rawValue.replace(/[^0-9]/g, "");
 
-        if (!onlyNumbers) {
+        if (!onlyNumbers && rawValue.indexOf("-") == -1) {
             return "";
         }
 
@@ -45,8 +45,7 @@ export class InputService {
             newRawValue += decimal + decimalPart;
         }
 
-        let isZero = parseInt(integerPart) == 0 && (parseInt(decimalPart) == 0 || decimalPart == "");
-        let operator = rawValue.indexOf("-") > -1 && allowNegative && !isZero ? "-" : "";
+        let operator = rawValue.indexOf("-") > -1 && allowNegative ? "-" : "";
         return operator + prefix + newRawValue + suffix;
     }
 
@@ -69,7 +68,7 @@ export class InputService {
     }
 
     changeToNegative(): void {
-        if (this.options.allowNegative && this.rawValue != "" && this.rawValue.charAt(0) != "-" && this.value != 0) {
+        if (this.options.allowNegative && (this.rawValue.length == 0 || this.rawValue.charAt(0) != "-")) {
             let selectionStart = this.inputSelection.selectionStart;
             this.rawValue = "-" + this.rawValue;
             this.updateFieldValue(selectionStart + 1);
