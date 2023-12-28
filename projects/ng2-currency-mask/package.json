@@ -1,6 +1,6 @@
 {
-    "name": "ng2-currency-mask",
-    "version": "13.0.3",
+    "name": "ng2-currency-mask-modified",
+    "version": "1.0.0",
     "peerDependencies": {
         "@angular/common": ">= 12.x.x",
         "@angular/core": ">= 12.x.x"

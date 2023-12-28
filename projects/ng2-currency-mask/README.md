@@ -1,4 +1,5 @@
-# ng2-currency-mask
+# ng2-currency-mask-modified
+This is a slightly modified version of the ng2-currency-mask, allowing the user to input a - sign before any numbers are entered into the field
 
 A very simple currency mask directive for Angular that allows using a number attribute with the ngModel. In other words, the model is a number, and not a string with a mask. It was tested in Angular version 13.
 
