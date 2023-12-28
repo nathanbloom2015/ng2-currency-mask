@@ -1,10 +1,10 @@
 {
-    "name": "ng2-currency-mask",
-    "version": "13.0.3",
+    "name": "ng2-currency-mask-modified",
+    "version": "1.0.0",
     "description": "A very simple currency mask directive that allows using a number attribute with the ngModel.",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/cesarrew/ng2-currency-mask.git"
+        "url": "git+https://github.com/nathanbloom2015/ng2-currency-mask.git"
     },
     "keywords": [
         "angular",
@@ -14,12 +14,12 @@
         "money",
         "number"
     ],
-    "author": "César Mendonça",
+    "author": "Nathan Bloom",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/cesarrew/ng2-currency-mask/issues"
     },
-    "homepage": "https://github.com/cesarrew/ng2-currency-mask",
+    "homepage": "https://github.com/nathanbloom2015/ng2-currency-mask",
     "scripts": {
         "build": "ng build",
         "lint": "ng lint",
@@ -57,7 +57,7 @@
         "eslint": "8.5.0",
         "eslint-config-prettier": "8.3.0",
         "eslint-plugin-prettier": "4.0.0",
-        "ng-packagr": "^13.0.0",
+        "ng-packagr": "^13.3.1",
         "prettier": "2.5.1",
         "typescript": "~4.5.2"
     }
